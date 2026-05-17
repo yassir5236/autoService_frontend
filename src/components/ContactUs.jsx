@@ -271,7 +271,7 @@ export default function ContactUs() {
 
             {/* Trust badges */}
             <AnimatedSection>
-              <motion.div variants={fadeUp} className="bg-gray-50 dark:bg-white/3 border border-gray-200 dark:border-white/8 rounded-2xl p-5">
+              <motion.div variants={fadeUp} className=" dark:bg-white/3 border border-gray-200 dark:border-white/8 rounded-2xl p-5">
                 <p className="text-gray-500 dark:text-slate-500 text-xs uppercase tracking-wider font-bold mb-4">علاش الوكالات كتوثق فينا</p>
                 {["بلا رسوم اشتراك شهرية", "عمولة فقط عند إتمام الكراء", "مشرف متخصص لكل وكالة", "لوحة تحكم لتحديث السيارات"].map((item, i) => (
                   <div key={i} className="flex items-center gap-2.5 mb-3 last:mb-0">
@@ -286,7 +286,7 @@ export default function ContactUs() {
       </section>
 
       {/* ══ FAQ ══ */}
-      <section className="py-20 px-4 bg-gray-50 dark:bg-white/2 transition-colors duration-300">
+      <section className="py-20 px-4  dark:bg-white/2 transition-colors duration-300">
         <div className="max-w-3xl mx-auto">
           <AnimatedSection className="text-center mb-12">
             <motion.p variants={fadeUp} className="text-indigo-600 dark:text-indigo-400 font-bold text-sm uppercase tracking-widest mb-3">أسئلة شائعة</motion.p>

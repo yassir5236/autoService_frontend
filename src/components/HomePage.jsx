@@ -292,7 +292,7 @@ function HowItWorksSection() {
           {steps.map((step, i) => (
             <motion.div key={i} variants={fadeUp} custom={i}
               whileHover={{ y: -6, scale: 1.02 }}
-              className="relative group bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl p-7 hover:border-indigo-400/50 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300"
+              className="relative group  dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl p-7 hover:border-indigo-400/50 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300"
             >
               {/* Connector */}
               {i < 2 && (
@@ -333,7 +333,7 @@ function BenefitsSection() {
   ];
 
   return (
-    <section className="py-24 px-4 bg-gray-50 dark:bg-white/2 transition-colors duration-300">
+    <section className="py-24 px-4  dark:bg-white/2 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <AnimatedSection className="text-center mb-16">
           <motion.span variants={fadeUp}
@@ -436,7 +436,7 @@ function StatsSection() {
 ══════════════════════════════════════════════════════ */
 function CitiesSection() {
   return (
-    <section className="py-24 px-4 bg-gray-50 dark:bg-white/2 transition-colors duration-300">
+    <section className="py-24 px-4  dark:bg-white/2 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <AnimatedSection className="text-center mb-14">
           <motion.span variants={fadeUp}
@@ -595,7 +595,7 @@ function TrustSection() {
   ];
 
   return (
-    <section className="py-16 px-4 bg-gray-50 dark:bg-white/2 transition-colors duration-300">
+    <section className="py-16 px-4  dark:bg-white/2 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <AnimatedSection>
           <motion.p variants={fadeUp}
