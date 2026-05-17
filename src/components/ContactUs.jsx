@@ -7,7 +7,7 @@ import {
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar.jsx";
 
-const WA_LINK = "https://wa.me/212644313921?text=السلام عليكم، بغيت نتواصل معكم حول خدمة AutoService لكراء السيارات";
+const WA_LINK = "https://wa.me/212644313921?text=السلام عليكم، بغيت نتواصل معكم حول خدمة BoxCars لكراء السيارات";
 
 /* ─── Animation helpers ─── */
 const fadeUp = {
@@ -85,12 +85,12 @@ export default function ContactUs() {
   };
 
   const faqs = [
-    { q: "كيفاش خدام AutoService للزبناء؟", a: "كتعبي الطلب بالمدينة ديالك، التواريخ، ونوع السيارة لي كتبغي. الفريق ديالنا كيراجع الطلب ويوصلك بأحسن وكالة متاحة فمدينتك — عادةً فأقل من نص ساعة." },
+    { q: "كيفاش خدام BoxCars للزبناء؟", a: "كتعبي الطلب اولا كتصل بينا مباشرة بالمدينة ديالك، التواريخ، ونوع السيارة لي كتبغي. الفريق ديالنا كيراجع الطلب ويوصلك بأحسن وكالة متاحة فمدينتك — عادةً فأقل من نص ساعة." },
     { q: "واش الخدمة مدفوعة للزبناء؟", a: "لا، الخدمة مجانية للزبناء. ما كاين ما تدفعو. غير كتدفع ثمن الكراء مباشرة للوكالة." },
-    { q: "كيفاش وكالة الكراء تنضم للمنصة؟", a: "تتواصل معانا عبر هاد الصفحة أو واتساب. التسجيل كيأخذ أقل من 24 ساعة وما كاين حتى رسوم مسبقة — كنربحو عمولة بسيطة غير عند إتمام الكراء." },
+    { q: "كيفاش وكالة الكراء تنضم للمنصة؟", a: "تتواصل معانا عبر هاد الصفحة أو واتساب. التسجيل كيأخذ أقل من نص ساعة وما كاين حتى رسوم مسبقة — كنربحو عمولة بسيطة غير عند إتمام الكراء." },
     { q: "فنيان المدن كتخدمو دابا؟", a: "دابا خدامين فآسفي ومراكش. قريبا غادي نوسعو لمدن مغربية أخرى كالدارالبيضاء والرباط وأكادير." },
-    { q: "قداش كيخذ الرد على الطلب؟", a: "الفريق ديالنا كيحاول يرد على كل طلب فأقل من 15-30 دقيقة خلال أوقات العمل." },
-    { q: "شنو لي كيفرق AutoService على مواقع الكراء العادية؟", a: "ماحناش سوق عامة. خدامين كوسيط ذكي — مشرف بشري كيتأكد من التوفر فوقت حقيقي ويوصلك بالوكالة المناسبة. لمسة بشرية بسرعة رقمية." },
+    { q: "قداش كيخذ الرد على الطلب؟", a: "الفريق ديالنا كيحاول يرد على كل طلب فأقل من 10-5 دقيقة خلال أوقات العمل." },
+    { q: "شنو لي كيفرق BoxCars على مواقع الكراء العادية؟", a: ". خدامين كوسيط ذكي — مشرف بشري كيتأكد من التوفر فوقت حقيقي ويوصلك بالوكالة المناسبة. لمسة بشرية بسرعة رقمية." },
   ];
 
   return (
@@ -109,12 +109,12 @@ export default function ContactUs() {
         <motion.div initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}
           className="inline-flex items-center gap-2 bg-indigo-50 dark:bg-indigo-500/10 border border-indigo-200 dark:border-indigo-500/30 rounded-full px-4 py-1.5 text-indigo-600 dark:text-indigo-300 text-sm font-semibold mb-6"
         >
-          <MessageCircle className="w-4 h-4" /> كنجاوبو فأقل من 30 دقيقة
+          <MessageCircle className="w-4 h-4" /> كنجاوبو فأقل من 5 دقيقة
         </motion.div>
         <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }}
           className="text-5xl md:text-7xl font-black leading-tight tracking-tight mb-5"
         >
-          هيا{" "}
+          اجي {" "}
           <span className="bg-gradient-to-r from-indigo-400 via-violet-400 to-blue-400 bg-clip-text text-transparent">نتكلمو</span>
         </motion.h1>
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}
@@ -128,9 +128,9 @@ export default function ContactUs() {
       <section className="pb-20 px-4">
         <div className="max-w-5xl mx-auto">
           <AnimatedSection className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            <ContactCard icon={MessageCircle} label="واتساب" value="+212 644 313 921" sub="أسرع طريقة للرد" href={WA_LINK} color="from-green-500 to-emerald-600" delay={0} />
-            <ContactCard icon={Phone} label="تليفون" value="+212 5XX XXX XXX" sub="الاثنين-السبت، 8ص-8م" href="tel:+212500000000" color="from-blue-500 to-cyan-600" delay={1} />
-            <ContactCard icon={Mail} label="إيميل" value="contact@autoservice.ma" sub="فأقل من ساعتين" href="mailto:contact@autoservice.ma" color="from-indigo-500 to-violet-600" delay={2} />
+            <ContactCard icon={MessageCircle} label="واتساب" value="" sub="أسرع طريقة للرد" href={WA_LINK} color="from-green-500 to-emerald-600" delay={0} />
+            <ContactCard icon={Phone} label="تليفون" value="" sub="الاثنين-السبت، 8ص-8م" href="tel:+212500000000" color="from-blue-500 to-cyan-600" delay={1} />
+            <ContactCard icon={Mail} label="إيميل" value="contact@BoxCars.ma" sub="" href="mailto:contact@BoxCars.ma" color="from-indigo-500 to-violet-600" delay={2} />
             <ContactCard icon={MapPin} label="المواقع" value="آسفي و مراكش" sub="المغرب 🇲🇦" href="#" color="from-orange-500 to-red-500" delay={3} />
           </AnimatedSection>
         </div>
@@ -294,7 +294,7 @@ export default function ContactUs() {
               أسئلة كتسألونا{" "}
               <span className="bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">عليها كثيرا</span>
             </motion.h2>
-            <motion.p variants={fadeUp} custom={2} className="text-gray-600 dark:text-slate-400 font-medium">كلشي لي خصك تعرف على AutoService.</motion.p>
+            <motion.p variants={fadeUp} custom={2} className="text-gray-600 dark:text-slate-400 font-medium">كلشي لي خصك تعرف على BoxCars.</motion.p>
           </AnimatedSection>
 
           <AnimatedSection className="space-y-3">
@@ -317,7 +317,7 @@ export default function ContactUs() {
               <div className="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-1.5 text-white/90 text-sm font-bold mb-5">
                 <Star className="w-4 h-4" /> أذكى منصة كراء فالمغرب
               </div>
-              <h2 className="text-3xl md:text-5xl font-black text-white mb-4 leading-tight">زالك عندك أسئلة؟</h2>
+              <h2 className="text-3xl md:text-5xl font-black text-white mb-4 leading-tight"> عندك أسئلة؟</h2>
               <p className="text-indigo-100 text-lg mb-8 max-w-md mx-auto font-medium">
                 الفريق ديالنا مستعد يجاوب على كلشي. راسلنا على واتساب للرد الفوري.
               </p>
@@ -344,9 +344,9 @@ export default function ContactUs() {
           <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center">
             <Car className="w-4 h-4 text-white" />
           </div>
-          <span className="text-gray-900 dark:text-white font-bold">AutoService</span>
+          <span className="text-gray-900 dark:text-white font-bold">BoxCars</span>
         </div>
-        <p>© {new Date().getFullYear()} AutoService · آسفي و مراكش، المغرب</p>
+        <p>© {new Date().getFullYear()} BoxCars · آسفي و مراكش، المغرب</p>
       </footer>
     </div>
   );

@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import Navbar from "./Navbar.jsx";
 
 const WA_LINK =
-  "https://wa.me/212644313921?text=السلام عليكم، بغيت نطلب سيارة عبر AutoService";
+  "https://wa.me/212644313921?text=السلام عليكم، بغيت نطلب سيارة عبر BoxCars";
 
 /* ─── Animations ─── */
 const fadeUp = {
@@ -88,8 +88,8 @@ function HeroSection() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="text-slate-300 text-lg leading-relaxed mb-9 max-w-xl"
             >
-              AutoService كيربط بين الزبناء ووكالات الكراء لي عندها سيارات خالية دابا
-              — بسرعة، بثقة، وبلا تعقيد. ما خصكش تتصل فعشر وكالات.
+              BoxCars كيربط بين الزبناء ووكالات الكراء لي عندها سيارات متاحة دابا
+              — بسرعة، بثقة، وبلا تعقيد. ما خصكش تتصل بعشر وكالات.
             </motion.p>
 
             <motion.div
@@ -124,7 +124,7 @@ function HeroSection() {
               {[
                 { n: "+50", l: "وكالة شريكة" },
                 { n: "+500", l: "طلب مكتمل" },
-                { n: "−30د", l: "وقت الرد" },
+                { n: "−3د", l: "وقت الرد" },
               ].map(({ n, l }, i) => (
                 <div key={i} className="text-center">
                   <div className="text-2xl font-extrabold bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">{n}</div>
@@ -160,9 +160,9 @@ function HeroSection() {
 
 function HeroCards() {
   const notifications = [
-    { icon: Car, color: "from-blue-500 to-cyan-500", msg: "Dacia Sandero — خالية", sub: "مراكش · 250 د.م/يوم" },
-    { icon: Car, color: "from-violet-500 to-indigo-500", msg: "Renault Clio — خالية", sub: "آسفي · 220 د.م/يوم" },
-    { icon: Car, color: "from-emerald-500 to-teal-500", msg: "Hyundai i10 — خالية", sub: "مراكش · 180 د.م/يوم" },
+    { icon: Car, color: "from-blue-500 to-cyan-500", msg: "Dacia Sandero — متاحة", sub: "مراكش · 250 د.م/يوم" },
+    { icon: Car, color: "from-violet-500 to-indigo-500", msg: "Renault Clio — متاحة", sub: "آسفي · 220 د.م/يوم" },
+    { icon: Car, color: "from-emerald-500 to-teal-500", msg: "Hyundai i10 — متاحة", sub: "مراكش · 180 د.م/يوم" },
   ];
 
   return (
@@ -199,7 +199,7 @@ function HeroCards() {
             </div>
             <div className="flex items-center gap-1">
               <div className="w-1.5 h-1.5 rounded-full bg-green-400" />
-              <span className="text-green-400 text-xs">خالية</span>
+              <span className="text-green-400 text-xs">متاحة</span>
             </div>
           </motion.div>
         ))}
@@ -232,7 +232,7 @@ function HeroCards() {
       >
         <div className="flex items-center gap-1.5">
           <Clock className="w-3.5 h-3.5 text-yellow-400" />
-          <span className="text-white text-xs font-medium">رد فأقل من 30 دقيقة</span>
+          <span className="text-white text-xs font-medium">رد فأقل من 5 دقيقة</span>
         </div>
       </motion.div>
     </div>
@@ -247,15 +247,15 @@ function HowItWorksSection() {
     {
       icon: MessageCircle,
       num: "01",
-      title: "أرسل طلبك",
-      desc: "عمر الطلب بالمدينة ديالك، التواريخ، ونوع السيارة لي كتبغي — فأقل من دقيقتين.",
+      title: "رسل طلبك على الواتساب",
+      desc: "عمر الطلب بالمدينة ديالك أرسل طلبك، التواريخ، ونوع السيارة لي كتبغي — فأقل من دقيقتين.",
       color: "from-blue-500 to-cyan-500",
     },
     {
       icon: Zap,
       num: "02",
       title: "كنلقاو ليك",
-      desc: "المشرف ديالنا كيشوف الوكالات المتاحة فمدينتك ويتواصل معاك فأقل من نص ساعة.",
+      desc: "المشرف ديالنا كيشوف الوكالات المتاحة فمدينتك ويتواصل معاك فأقل من نص فأقل مدة.",
       color: "from-indigo-500 to-violet-500",
     },
     {
@@ -319,9 +319,9 @@ function HowItWorksSection() {
 ══════════════════════════════════════════════════════ */
 function BenefitsSection() {
   const customerBenefits = [
-    { icon: Clock, title: "بلا ضياع الوقت", desc: "ما خصكك تتصل فعشر وكالات. غير طلب واحد وحنا نلقاو ليك." },
+    { icon: Clock, title: "بلا ضياع الوقت", desc: "ما خصكك تتصل بعشر وكالات. غير طلب واحد وحنا نلقاو ليك." },
     { icon: BadgeCheck, title: "وكالات موثوقة", desc: "كل الوكالات المتعاونة معانا مراقبة ومعتمدة." },
-    { icon: MessageCircle, title: "مشرف بشري", desc: "مو روبو ولا أوتوماتيك — كاين واحد حقيقي كيهتم بطلبك." },
+    { icon: MessageCircle, title: "مشرف بشري", desc: "ماشي روبو ولا أوتوماتيك — كاين واحد حقيقي كيهتم بطلبك." },
     { icon: Gauge, title: "سرعة في الرد", desc: "فأقل من 30 دقيقة كتعرف عندنا واش كاينة سيارة ليك." },
   ];
 
@@ -338,7 +338,7 @@ function BenefitsSection() {
         <AnimatedSection className="text-center mb-16">
           <motion.span variants={fadeUp}
             className="inline-block text-indigo-600 dark:text-indigo-400 font-semibold text-sm uppercase tracking-widest mb-3">
-            لماذا AutoService
+            لماذا BoxCars
           </motion.span>
           <motion.h2 variants={fadeUp} custom={1}
             className="text-3xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
@@ -589,7 +589,7 @@ function TrustSection() {
     { icon: Shield, text: "وكالات معتمدة ومراقبة" },
     { icon: Star, text: "تقييمات حقيقية من زبناء حقيقيين" },
     { icon: PhoneCall, text: "مشرف بشري مو روبو" },
-    { icon: Clock, text: "رد فأقل من 30 دقيقة" },
+    { icon: Clock, text: "رد فأقل من 5 دقيقة" },
     { icon: Banknote, text: "بلا رسوم خفية" },
     { icon: MapPin, text: "خدمة محلية تعرف المغرب" },
   ];
@@ -641,7 +641,7 @@ function FinalCTASection() {
           <div className="relative z-10">
             <div className="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-1.5 text-white/90 text-sm font-medium mb-6">
               <Star className="w-4 h-4" />
-              جرب AutoService اليوم — مجانًا
+              جرب BoxCars اليوم — مجانًا
             </div>
             <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-5 leading-tight">
               واش كتبغي تكري سيارة؟
@@ -649,7 +649,7 @@ function FinalCTASection() {
               <span className="text-indigo-200">حنا هنا باش نعاونوك</span>
             </h2>
             <p className="text-indigo-100 text-lg mb-10 max-w-xl mx-auto leading-relaxed">
-              طلب سيارتك فأقل من دقيقتين، وحنا نلقاو ليك الوكالة لي عندها الطوموبيل خالية دابا فمدينتك.
+              طلب سيارتك فأقل من دقيقتين، وحنا نلقاو ليك الوكالة لي عندها الطوموبيل متاحة دابا فمدينتك.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact"
@@ -681,10 +681,10 @@ function FooterStrip() {
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center">
             <Car className="w-4 h-4 text-white" />
           </div>
-          <span className="text-gray-900 dark:text-white font-bold text-lg">AutoService</span>
+          <span className="text-gray-900 dark:text-white font-bold text-lg">BoxCars</span>
         </div>
         <p className="text-gray-400 dark:text-slate-500 text-sm text-center">
-          © {new Date().getFullYear()} AutoService · آسفي و مراكش، المغرب — منصة ذكية لكراء السيارات
+          © {new Date().getFullYear()} BoxCars · آسفي و مراكش، المغرب — منصة ذكية لكراء السيارات
         </p>
         <div className="flex items-center gap-4 text-sm">
           <Link to="/about" className="text-gray-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">من نحن</Link>
